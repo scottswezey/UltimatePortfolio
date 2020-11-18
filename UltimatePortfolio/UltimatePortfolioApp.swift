@@ -16,11 +16,16 @@ struct UltimatePortfolioApp: App {
 		_dataController = StateObject(wrappedValue: dataController)
 	}
 	
+	func save(_ note: Notification) {
+		dataController.save()
+	}
+	
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
 				.environment(\.managedObjectContext, dataController.container.viewContext)
 				.environmentObject(dataController)
+				.onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)
 		}
 	}
 }
