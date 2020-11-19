@@ -8,7 +8,7 @@
 import Foundation
 
 extension Item {
-	var itemTitle: String { title ?? "" }
+	var itemTitle: String { title ?? "New Item" }
 	var itemDetail: String { detail ?? "" }
 	var itemCreationDate: Date { creationDate ?? Date() }
 	
