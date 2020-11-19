@@ -30,39 +30,46 @@ struct ProjectsView: View {
 	
 	var body: some View {
 		NavigationView {
-			List {
-				ForEach(projects.wrappedValue) { project in
-					Section(header: ProjectHeaderView(project: project)) {
-						ForEach(project.projectItems(using: sortOrder)) { item in
-							ItemRowView(item: item)
-						}
-						.onDelete { offsets in
-							let allItems = project.projectItems
-							
-							for offset in offsets {
-								let item = allItems[offset]
-								dataController.delete(item)
-							}
-							
-							dataController.save()
-						}
-						
-						if showClosedProjects == false {
-							Button {
-								withAnimation {
-									let item = Item(context: managedObjectContext)
-									item.project = project
-									item.creationDate = Date()
+			Group {
+				if projects.wrappedValue.count == 0 {
+					Text("There's nothing here right now.")
+						.foregroundColor(.secondary)
+				} else {
+					List {
+						ForEach(projects.wrappedValue) { project in
+							Section(header: ProjectHeaderView(project: project)) {
+								ForEach(project.projectItems(using: sortOrder)) { item in
+									ItemRowView(project: project, item: item)
+								}
+								.onDelete { offsets in
+									let allItems = project.projectItems(using: sortOrder)
+									
+									for offset in offsets {
+										let item = allItems[offset]
+										dataController.delete(item)
+									}
+									
 									dataController.save()
 								}
-							} label: {
-								Label("Add New Item", systemImage: "plus")
+								
+								if showClosedProjects == false {
+									Button {
+										withAnimation {
+											let item = Item(context: managedObjectContext)
+											item.project = project
+											item.creationDate = Date()
+											dataController.save()
+										}
+									} label: {
+										Label("Add New Item", systemImage: "plus")
+									}
+								}
 							}
 						}
 					}
+					.listStyle(InsetGroupedListStyle())
 				}
 			}
-			.listStyle(InsetGroupedListStyle())
 			.navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
 			.toolbar {
 				ToolbarItem(placement: .navigationBarTrailing) {
@@ -95,6 +102,8 @@ struct ProjectsView: View {
 					.default(Text("Title")) { sortOrder = .title },
 				])
 			}
+			
+			SelectSomethingView()
 		}
 	}
 }
