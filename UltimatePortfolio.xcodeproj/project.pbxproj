@@ -24,6 +24,7 @@
 		D20016622565E7AB00E6F39A /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20016612565E7AB00E6F39A /* ProjectHeaderView.swift */; };
 		D20016652565E94200E6F39A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20016642565E94200E6F39A /* Colors.xcassets */; };
 		D20016682565EA1400E6F39A /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20016672565EA1400E6F39A /* EditProjectView.swift */; };
+		D2B73EE225662D50002876C7 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EE125662D50002876C7 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		D20016612565E7AB00E6F39A /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		D20016642565E94200E6F39A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D20016672565EA1400E6F39A /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		D2B73EE125662D50002876C7 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				D20016552565D73800E6F39A /* Project-CoreDataHelpers.swift */,
 				D200164C2565CDC500E6F39A /* HomeView.swift */,
 				D200164F2565CE2900E6F39A /* ProjectsView.swift */,
+				D2B73EE125662D50002876C7 /* Sequence-Sorting.swift */,
 				D200165E2565E21000E6F39A /* Binding-OnChange.swift */,
 				D200165B2565E09D00E6F39A /* ItemRowView.swift */,
 				D200163E2565C5B600E6F39A /* Main.xcdatamodeld */,
@@ -198,6 +201,7 @@
 				D200165C2565E09D00E6F39A /* ItemRowView.swift in Sources */,
 				D20016312565C21A00E6F39A /* ContentView.swift in Sources */,
 				D200165F2565E21000E6F39A /* Binding-OnChange.swift in Sources */,
+				D2B73EE225662D50002876C7 /* Sequence-Sorting.swift in Sources */,
 				D200164D2565CDC500E6F39A /* HomeView.swift in Sources */,
 				D200162F2565C21A00E6F39A /* UltimatePortfolioApp.swift in Sources */,
 				D20016532565D62C00E6F39A /* Item-CoreDataHelpers.swift in Sources */,

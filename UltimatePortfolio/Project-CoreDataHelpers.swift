@@ -14,6 +14,21 @@ extension Project {
 	var projectColor: String { color ?? "Light Blue" }
 	
 	var projectItems: [Item] {
+		items?.allObjects as? [Item] ?? []
+	}
+	
+	func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+		switch sortOrder {
+		case .title:
+			return projectItems.sorted(by: \Item.itemTitle)
+		case .creationDate:
+			return projectItems.sorted(by: \Item.itemCreationDate)
+		case .optimized:
+			return projectItemsDefaultSorted
+		}
+	}
+	
+	var projectItemsDefaultSorted: [Item] {
 		let itemsArray = items?.allObjects as? [Item] ?? []
 		
 		return itemsArray.sorted { first, second in
@@ -36,6 +51,8 @@ extension Project {
 			return first.itemCreationDate < second.itemCreationDate
 		}
 	}
+	
+	
 	
 	var completionAmount: Double {
 		let originalItems = items?.allObjects as? [Item] ?? []
