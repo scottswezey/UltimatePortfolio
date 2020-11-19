@@ -29,6 +29,7 @@ struct EditItemView: View {
 		item.detail = detail
 		item.priority = Int16(priority)
 		item.completed = completed
+		
 		item.project?.objectWillChange.send()
 	}
 	
