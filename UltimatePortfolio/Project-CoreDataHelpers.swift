@@ -5,7 +5,7 @@
 //  Created by Scott on 11/18/20.
 //
 
-import Foundation
+import SwiftUI
 
 extension Project {
 	static let colors = ["Pink", "Purple", "Red", "Orange", "Gold", "Green", "Teal", "Light Blue", "Dark Blue", "Midnight", "Dark Gray", "Gray"]
@@ -15,6 +15,10 @@ extension Project {
 	
 	var projectItems: [Item] {
 		items?.allObjects as? [Item] ?? []
+	}
+	
+	var label: LocalizedStringKey {
+		"\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete."
 	}
 	
 	func projectItems(using sortOrder: Item.SortOrder) -> [Item] {

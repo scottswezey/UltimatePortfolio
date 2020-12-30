@@ -24,6 +24,8 @@
 		D20016622565E7AB00E6F39A /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20016612565E7AB00E6F39A /* ProjectHeaderView.swift */; };
 		D20016652565E94200E6F39A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20016642565E94200E6F39A /* Colors.xcassets */; };
 		D20016682565EA1400E6F39A /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20016672565EA1400E6F39A /* EditProjectView.swift */; };
+		D2164258259C147900611BF2 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2164257259C147900611BF2 /* ItemListView.swift */; };
+		D216425B259C15D300611BF2 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D216425A259C15D300611BF2 /* ProjectSummaryView.swift */; };
 		D2B73EE225662D50002876C7 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EE125662D50002876C7 /* Sequence-Sorting.swift */; };
 		D2B73EE52566356A002876C7 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EE42566356A002876C7 /* SelectSomethingView.swift */; };
 		D2B73EE825663720002876C7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EE725663720002876C7 /* Bundle-Decodable.swift */; };
@@ -56,6 +58,8 @@
 		D20016612565E7AB00E6F39A /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		D20016642565E94200E6F39A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D20016672565EA1400E6F39A /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		D2164257259C147900611BF2 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		D216425A259C15D300611BF2 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		D2B73EE125662D50002876C7 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		D2B73EE42566356A002876C7 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		D2B73EE725663720002876C7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				D20016522565D62C00E6F39A /* Item-CoreDataHelpers.swift */,
 				D20016552565D73800E6F39A /* Project-CoreDataHelpers.swift */,
 				D200164C2565CDC500E6F39A /* HomeView.swift */,
+				D216425A259C15D300611BF2 /* ProjectSummaryView.swift */,
+				D2164257259C147900611BF2 /* ItemListView.swift */,
 				D200164F2565CE2900E6F39A /* ProjectsView.swift */,
 				D2B73EE725663720002876C7 /* Bundle-Decodable.swift */,
 				D2B73EED25663AB9002876C7 /* Award.swift */,
@@ -224,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20016502565CE2900E6F39A /* ProjectsView.swift in Sources */,
+				D216425B259C15D300611BF2 /* ProjectSummaryView.swift in Sources */,
 				D20016622565E7AB00E6F39A /* ProjectHeaderView.swift in Sources */,
 				D2B73EF125663BA0002876C7 /* AwardsView.swift in Sources */,
 				D20016402565C5B600E6F39A /* Main.xcdatamodeld in Sources */,
@@ -238,6 +245,7 @@
 				D200165F2565E21000E6F39A /* Binding-OnChange.swift in Sources */,
 				D2B73EE225662D50002876C7 /* Sequence-Sorting.swift in Sources */,
 				D2B73EE825663720002876C7 /* Bundle-Decodable.swift in Sources */,
+				D2164258259C147900611BF2 /* ItemListView.swift in Sources */,
 				D200164D2565CDC500E6F39A /* HomeView.swift in Sources */,
 				D200162F2565C21A00E6F39A /* UltimatePortfolioApp.swift in Sources */,
 				D20016532565D62C00E6F39A /* Item-CoreDataHelpers.swift in Sources */,
