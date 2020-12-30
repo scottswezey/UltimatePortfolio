@@ -31,6 +31,7 @@
 		D2B73EE825663720002876C7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EE725663720002876C7 /* Bundle-Decodable.swift */; };
 		D2B73EEE25663AB9002876C7 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EED25663AB9002876C7 /* Award.swift */; };
 		D2B73EF125663BA0002876C7 /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B73EF025663BA0002876C7 /* AwardsView.swift */; };
+		D2C76D7C259C419A00F09276 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D2C76D7B259C419A00F09276 /* README.md */; };
 		D2CA100F259BCD0600632B9E /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CA100E259BCD0600632B9E /* Color-Additions.swift */; };
 		D2D9A03B259BE01B00FA425A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2D9A03D259BE01B00FA425A /* Localizable.strings */; };
 		D2D9A040259BE08900FA425A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = D2D9A042259BE08900FA425A /* Localizable.stringsdict */; };
@@ -65,6 +66,7 @@
 		D2B73EE725663720002876C7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		D2B73EED25663AB9002876C7 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		D2B73EF025663BA0002876C7 /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		D2C76D7B259C419A00F09276 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D2CA100E259BCD0600632B9E /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		D2D9A03C259BE01B00FA425A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D2D9A03F259BE03100FA425A /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		D20016222565C21A00E6F39A = {
 			isa = PBXGroup;
 			children = (
+				D2C76D7B259C419A00F09276 /* README.md */,
 				D2D9A048259BE26200FA425A /* Awards.json */,
 				D200162D2565C21A00E6F39A /* UltimatePortfolio */,
 				D200162C2565C21A00E6F39A /* Products */,
@@ -217,6 +220,7 @@
 				D2D9A03B259BE01B00FA425A /* Localizable.strings in Resources */,
 				D20016652565E94200E6F39A /* Colors.xcassets in Resources */,
 				D2D9A046259BE26200FA425A /* Awards.json in Resources */,
+				D2C76D7C259C419A00F09276 /* README.md in Resources */,
 				D20016362565C21C00E6F39A /* Preview Assets.xcassets in Resources */,
 				D20016332565C21C00E6F39A /* Assets.xcassets in Resources */,
 				D2D9A040259BE08900FA425A /* Localizable.stringsdict in Resources */,

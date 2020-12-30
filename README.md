@@ -7,7 +7,6 @@
 This is my copy of the "Ultimate Portfolio Project" tutorial series in Hacking with Swift+. I mostly dabbled with Swift and iOS dev in the past, but decided it's time to start improving these skills too. 
 
 ## What have I learned in this series?
-
 * Accessibility (VoiceOver, Internationalization & Strings files)
 * Core Data Basics
 * Providing sample data for canvas previews.
