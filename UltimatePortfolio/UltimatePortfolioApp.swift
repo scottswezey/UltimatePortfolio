@@ -15,7 +15,7 @@ struct UltimatePortfolioApp: App {
 		let dataController = DataController()
 		_dataController = StateObject(wrappedValue: dataController)
 	}
-	
+
 	func save(_ note: Notification) {
 		dataController.save()
 	}

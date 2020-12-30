@@ -15,7 +15,7 @@ struct ProjectSummaryView: View {
 			Text("\(project.projectItems.count) items")
 				.font(.caption)
 				.foregroundColor(.secondary)
-			
+
 			Text(project.projectTitle)
 				.font(.title2)
 

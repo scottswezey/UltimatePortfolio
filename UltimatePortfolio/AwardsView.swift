@@ -17,7 +17,7 @@ struct AwardsView: View {
 	var columns: [GridItem] {
 		[GridItem(.adaptive(minimum: 100, maximum: 100))]
 	}
-	
+
 	var body: some View {
 		NavigationView {
 			ScrollView {
@@ -44,7 +44,10 @@ struct AwardsView: View {
 			.navigationTitle("Awards")
 			.alert(isPresented: $showingAwardDetails) {
 				if dataController.hasEarned(award: selectedAward) {
-					return Alert(title: Text("Unlocked: \(selectedAward.name)"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
+					return Alert(
+						title: Text("Unlocked: \(selectedAward.name)"),
+						message: Text(selectedAward.description),
+						dismissButton: .default(Text("OK")))
 				} else {
 					return Alert(title: Text("Locked"), message: Text(selectedAward.description), dismissButton: .default(Text("OK")))
 				}
