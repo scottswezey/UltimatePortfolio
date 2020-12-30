@@ -10,10 +10,10 @@ import SwiftUI
 struct AwardsView: View {
 	static let tag: String? = "Awards"
 	@EnvironmentObject var dataController: DataController
-	
+
 	@State private var selectedAward = Award.example
 	@State private var showingAwardDetails = false
-	
+
 	var columns: [GridItem] {
 		[GridItem(.adaptive(minimum: 100, maximum: 100))]
 	}

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct UltimatePortfolioApp: App {
 	@StateObject var dataController: DataController
-	
+
 	init() {
 		let dataController = DataController()
 		_dataController = StateObject(wrappedValue: dataController)
@@ -19,7 +19,7 @@ struct UltimatePortfolioApp: App {
 	func save(_ note: Notification) {
 		dataController.save()
 	}
-	
+
 	var body: some Scene {
 		WindowGroup {
 			ContentView()

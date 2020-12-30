@@ -40,7 +40,7 @@ struct EditProjectView: View {
 		dataController.delete(project)
 		presentationMode.wrappedValue.dismiss()
 	}
-	
+
 	var body: some View {
 		Form {
 			Section(header: Text("Basic Settings")) {
@@ -59,7 +59,7 @@ struct EditProjectView: View {
 					project.closed.toggle()
 					update()
 				}
-				
+
 				Button("Delete this project") {
 					showingDeleteConfirm = true
 				}
@@ -104,7 +104,7 @@ struct EditProjectView: View {
 
 struct EditProjectView_Previews: PreviewProvider {
 	static var dataController = DataController.preview
-	
+
 	static var previews: some View {
 		EditProjectView(project: Project.example)
 			.environmentObject(dataController)
